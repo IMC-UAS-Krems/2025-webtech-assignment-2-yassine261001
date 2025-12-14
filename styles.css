@@ -1,0 +1,100 @@
+:root {
+  --accent: #00c8d6;
+  --bg-dark: #1a1c20;
+  --bg-darker: #121416;
+  --bg-card: #222428;
+  --text-light: #e6e6e6;
+
+  --bs-border-radius: 0 !important;
+  --bs-primary: var(--accent) !important;
+}
+
+* {
+  transition: 0.25s ease;
+}
+
+body {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  padding-top: 90px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.navbar {
+  background: var(--bg-darker) !important;
+  border-bottom: 1px solid #2c2c2c;
+}
+
+#hero {
+  background: #1f2125;
+  border-bottom: 1px solid #2c2c2c;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid #2e2e2e;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+.btn-primary {
+  background-color: var(--accent) !important;
+  border-color: var(--accent) !important;
+  color: #000 !important;
+}
+
+.btn-danger {
+  background-color: #c63c3c !important;
+  border-color: #c63c3c !important;
+}
+
+#cart-panel {
+  background: var(--bg-darker);
+  border-left: 3px solid var(--accent);
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to   { transform: translateX(0); opacity: 1; }
+}
+
+
+#checkout-section form {
+  background: var(--bg-card);
+  border: 1px solid #333;
+  border-left: 4px solid var(--accent);
+}
+
+input {
+  background: var(--bg-darker);
+  color: var(--text-light);
+  border: 1px solid #3a3d40;
+}
+
+input:focus {
+  border-color: var(--accent);
+  box-shadow: none;
+}
+
+#confirmation-details {
+  background: var(--bg-card);
+  border-left: 4px solid var(--accent);
+}
+
+.text-muted {
+  color: #d4d4d4 !important;
+}
+
+.card-body h5,
+.card-body p {
+  color: #e6e6e6 !important;
+}
